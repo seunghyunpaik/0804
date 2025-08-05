@@ -1,163 +1,97 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
-  
-  body {
-    margin: 0;
-    font-family: var(--bs-body-font-family);
-    font-size: var(--bs-body-font-size);
-    font-weight: var(--bs-body-font-weight);
-    line-height: var(--bs-body-line-height);
-    color: var(--bs-body-color);
-    text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  *,
-  ::after,
-  ::before {
-    box-sizing: border-box;
-  }
-  
-  .btn-outline-success {
-    color:
-  }
-  
-  .btn-outline-success:hover {
-    color:
-  }
-  
-  .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .carousel-item {
-    position: relative;
-    display: none;
-    float: left;
-    width: 100%;
-    /* height: 80%; */
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform .6s ease-in-out;
-  }
-  
-  .carousel-item.active {
-    display: block;
-  }
-  
-  .first-img {
-    width: 100vw;
-  }
-  
-  footer {
-    background: #070070;
-    font-size: 14px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.btn-outline-success {
+  color:
+}
+
+.btn-outline-success:hover {
+  color:
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-height: 800px;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform .6s ease-in-out;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.first-img {
+  width: 100vw;
+}
+
+footer {
+  background: #070070;
+  font-size: 14px;
+  color: white;
+}
+
+.first-line {
     color: white;
+    border-bottom: 1px solid #c2c6ff;
+}
+
+
+.second-line a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.third-line{
+  display :none;
+}
+@media screen and (max-width: 48rem){
+  .first-line{
+    text-align: center;
   }
-  
-  @media screen and (max-width: 48rem) {
-  
-    .container,
-    .container-sm {
-      max-width: 540px;
-    }
-  
-    .first-line {
-      text-align: center;
-    }
-  
-    .second-line {
-      padding: 0 2rem;
-  
-      .flag {
-        display: none;
-      }
-  
-      .mobile-footer {
-        display: block;
-      }
-  
-      .container,
-      .container-sm {
-        max-width: 540px;
-      }
-    }
-  
-    .first-line {
-      color: white;
-      border-bottom: 1px solid #eae0ff;
-    }
-  
-    .second-line {
-      display: block;
-      color: white;
-      border-bottom: 1px solid #eae0ff;
-    }
-  
-    .col {
-      flex: 1 0 0%;
-      padding-bottom: 1rem;
-    }
-  
-    .pb-5 {
-      padding-bottom: 3rem !important;
-    }
-  
-    .pt-5 {
-      padding-top: 3rem !important;
-    }
-  
-    .second-line a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      border-bottom: 1px solid #eae0ff;
-    }
-  
-    .row>* {
-      flex-shrink: 0;
-      width: 100%;
-      max-width: 100%;
-      padding-right: calc(var(--bs-gutter-x) * .5);
-      padding-left: calc(var(--bs-gutter-x) * .5);
-      margin-top: var(--bs-gutter-y);
-    }
-  
-    .mobile-footer {
-      border-top: 1px solid #392d23;
-      color: white;
-      text-align: center;
-      font-size: 1.125rem;
-      font-weight: 300;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      align-items: center;
-      display: none;
-    }
-  
-    .container,
-    .container-fluid,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl,
-    .container-xxl {
-      width: 100%;
-      padding-right: var(--bs-gutter-x, .75rem);
-      padding-left: var(--bs-gutter-x, .75rem);
-      margin-right: auto;
-      margin-left: auto;
-    }
-  
-  
-    div {
-      display: block;
-      unicode-bidi: isolate;
-    }
+
+  .second-line{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: 1px solid #c2c6ff;
+    
+  }
+
+  .third-line{
+    display: block;
+    padding-left: 2rem;
+  }
+}
